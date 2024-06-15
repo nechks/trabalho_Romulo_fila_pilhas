@@ -1,12 +1,12 @@
 public class Usuario {
-    private static int contador;
+    private static int contador=0;
     private int numero;
     private String nome;
 
 
 
     public Usuario() {
-        this.numero = contador++;
+        this.numero = ++contador;
     }
 
     public int getNumero() {
@@ -22,7 +22,7 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return getNome() + numero;
+        return getNome() + " - " + numero;
     }
 
 
